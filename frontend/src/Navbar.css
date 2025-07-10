@@ -1,0 +1,90 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Links section */
+#links {
+  display: flex;
+  gap: 24px;
+}
+
+#links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#links a:hover {
+  color: #00b14f; /* Blinkit green */
+}
+
+/* Buttons section */
+#buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#cart {
+  padding: 8px 16px;
+  background-color: #00b14f; /* Blinkit green */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cart:hover {
+  background-color: #029e45;
+}
+
+/* Search bar style */
+.search-bar {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 24px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #00b14f; /* Blinkit green */
+}
+
+.cart-count {
+  background: red;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+}

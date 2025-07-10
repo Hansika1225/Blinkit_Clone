@@ -1,0 +1,41 @@
+/* Main container holding all category cards */
+.category-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 16px;
+  gap: 16px;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: Hide scrollbar for WebKit browsers */
+.category-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual card */
+.category-card {
+  min-width: 120px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  flex-shrink: 0; /* Prevent shrinking on scroll */
+  cursor: pointer;
+}
+
+/* Hover effect like Blinkit */
+.category-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Category image styling */
+.category-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
